@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LISTING>
+    <MOVIE>
+        <ID>001</ID>
+        <GENRE>Fantasy</GENRE>
+        <ACTOR>Gerard Butler</ACTOR>
+        <NAME>300</NAME>
+        <SHOWING>Omniplex</SHOWING>
+        <COST>13.99</COST>
+    </MOVIE>
+    <MOVIE>
+        <ID>002</ID>
+        <GENRE>Fantasy</GENRE>
+        <ACTOR>Elijah Wood</ACTOR>
+        <NAME>Lord of the Rings</NAME>
+        <SHOWING>Forum Cinema</SHOWING>
+        <COST>9.99</COST>
+    </MOVIE>
+    <MOVIE>
+        <ID>003</ID>
+        <GENRE>Fantasy</GENRE>
+        <ACTOR>William Moseley</ACTOR>
+        <NAME>The Chronicles of Narnia</NAME>
+        <SHOWING>Netflix</SHOWING>
+        <COST>21.99</COST>
+    </MOVIE>
+    <MOVIE>
+        <ID>004</ID>
+        <GENRE>Fantasy</GENRE>
+        <ACTOR>Martin Freeman</ACTOR>
+        <NAME>Hobit</NAME>
+        <SHOWING>Forum Cinema</SHOWING>
+        <COST>19.99</COST>
+    </MOVIE>
+    <MOVIE>
+        <ID>005</ID>
+        <GENRE>Fantasy</GENRE>
+        <ACTOR>Brad Pitt</ACTOR>
+        <NAME>Troy</NAME>
+        <SHOWING>Cinema</SHOWING>
+        <COST>10.99</COST>
+    </MOVIE>
+</LISTING>

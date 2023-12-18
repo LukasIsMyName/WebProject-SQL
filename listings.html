@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- Viewport for mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noflix Movies</title>
+
+<!-- Linking bootstrap, stylesheets, scripts-->
+<link href="./ASSETS/css/bootstrap.min.css" rel="stylesheet">
+<link href="./ASSETS/css/listings.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="./ASSETS/js/methods.js"></script>
+<div id="cover"></div>
+
+<body class="d-flex  h-10 text-center text-bg-dark">
+    
+    <!-- Top navigation buttons -->
+    <!-- Utilizing bootstrap for a neat style -->
+    <button type="button" class="btn btn-dark" id="nav" onclick="window.location.href='index.html'">Home</button>
+    <button type="button" class="btn btn-dark" id="nav" onclick="window.location.href='listings.html',setMovieID()">Movies</button>
+    <button type="button" class="btn btn-dark" id="nav">More</button> 
+
+
+    <button type="button" class="btn btn-outline-light" id="movieKey" onclick="showPrevious()">Previous</button>
+    <button type="button" class="btn btn-outline-light" id="movieKey" onclick="showNext()">Next</button>
+    <button type="button" class="btn btn-outline-light" id="movieKey" onclick="showBooking()">Book</button>
+
+    <div id="bookingdiv">
+        <h2 id="bookingheader"><b><em>300</em></b></h2>
+        <form id="form" method="POST" action="./ASSETS/php/booking.php">
+            <p>
+                <input type="text" name="moviename" id="moviename" value="300" hidden><br>
+            </p>
+            <p>
+                <label id="label" for="Date">Date </label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label id="label" for="email">Email</label>
+                <input paddingright="20px" type="text" name="email" id="email">
+            </p>
+            <p>
+            <input type="submit" name="submit" id="submit" value="Submit">
+            </p>
+          </form>
+    </div>
+
+    <img id="moviepic" src="./ASSETS/pictures/pic7.jpg">
+    <h2 id="movietitle">300</h2>
+    <p id="moviedescription">The plot revolves around King Leonidas (Gerard Butler), who leads 300 Spartans into battle against the Persian 'God-King' Xerxes (Rodrigo Santoro) and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo (Lena Headey) attempts to rally support in Sparta for her husband.</p>
+       <iframe id="moviedemo" src="https://www.youtube.com/embed/4Prc1UfuokY?autoplay=1&mute=1"></iframe>
+
+</body>
+
+
+

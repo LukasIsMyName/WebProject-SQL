@@ -1,0 +1,80 @@
+#nav {
+  position: relative;
+  height: 6.67%; /* 60px / 900px * 100 */
+  width: 9.72%; /* 140px / 1440px * 100 */
+  
+  margin-right: 0.69%; /* 10px / 1440px * 100 */
+  margin-left: 0.69%; /* 10px / 1440px * 100 */
+  margin-top: 1.11%; /* 10px / 900px * 100 */
+}
+
+#bookingKey {
+  position: relative;
+  height: 6.67%; /* 60px / 900px * 100 */
+  width: 9.72%; /* 140px / 1440px * 100 */
+  top: 22.22%; /* 200px / 900px * 100 */
+  
+  margin-right: 0.69%; /* 10px / 1440px * 100 */
+  margin-left: 0.69%; /* 10px / 1440px * 100 */
+  margin-top: 1.11%; /* 10px / 900px * 100 */
+}
+
+.tablediv {
+  position: absolute;
+  background-color: rgba(90, 60, 75, 0.226);
+  height: auto;
+  width: auto;
+  top: 27%;
+  left: 30%;
+}
+
+table {
+  border: 2px;
+  border-style:solid;
+  border-color: rgba(204, 16, 141, 0.473);
+}
+
+th, td {
+  border: 1px;
+  border-style:solid;
+  border-color: rgba(68, 124, 238, 0.151);
+}
+
+#tableheader {
+  position:absolute;
+  float: left;
+  padding: 20px;
+  top: 15%;
+  left: 32%;
+
+  width: 35%; 
+  height: 60%;
+}
+
+#left {
+  position: absolute;
+  width: 15%;
+  height: 90%;
+  float: left;
+  top: 10%;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('https://i.gifer.com/fzUl.gif');
+  background-size: cover;
+}
+
+#right {
+  position: absolute;
+  width: 15%;
+  height: 90%;
+  float: right;
+  left: 85%;
+  top: 10%;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('https://i.gifer.com/fzUl.gif');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#cover {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url("https://images.unsplash.com/photo-1557682250-33bd709cbe

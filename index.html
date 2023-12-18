@@ -1,0 +1,69 @@
+<!-- Author: Lukas Sumkauskas                                                      -->
+<!-- ID: SBA22472                                                                  -->
+<!-- Date: March 2023                                                              -->
+<!--                                                                               -->
+<!-- Program: Responsive web, utilizing                                            -->
+<!-- CSS, Bootstrap 5, XML, JavaScript, PHP, MySQL to deliver                      -->
+<!-- a movie listing webpage, parsed XML data to an HTML table,                    -->
+<!-- dynamic pages for each                                                        -->
+<!-- individual movie with their corresponding titles, descriptions and demo       -->
+<!-- clips, a dynamic booking page that sends a query to MySQL database            -->
+<!-- and stores booking information in a database table.                           -->
+<!--                                                                               -->
+<!-- Estimate time: 15 hours                                                       -->
+<!-- Time taken: 19 hours                                                          -->
+<!--                                                                               -->
+<!-- Known bugs: none                                                              -->
+
+
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <meta charset="utf-8">
+    <!-- Viewport for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noflix</title>
+
+    <!-- Linking bootstrap, stylesheets, scripts-->
+    <div id="cover"></div>
+    <link href="./ASSETS/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./ASSETS/css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./ASSETS/js/script.js"></script>
+    <body class="d-flex  h-10 text-center text-bg-dark">
+
+        <!-- Top navigation buttons -->
+        <!-- Utilizing bootstrap for a neat style -->
+        <button type="button" class="btn btn-dark" id="nav">Home</button>
+        <button type="button" class="btn btn-dark" id="nav" onclick="window.location.href='listings.html'">Movies</button>
+        <button type="button" class="btn btn-dark" id="nav">More</button>
+
+        <form id="search" class="d-flex">
+            <input id="input" class="form-control me-1" type="text" onkeyup="filter()" placeholder="Actor" aria-label="Search">
+        </form>
+
+        <!-- Table-->
+        <h2 id="tableheader">List of movies available</h2>
+        <div class="tablediv">
+            <table id="movietable" class="table-dark" cellpadding="20" >
+                <thead>
+                    <tr>
+                        <th>Id</th>                     
+                        <th>Genre</th>                     
+                        <th>Actor</th>                      
+                        <th>Movie</th>                       
+                        <th>Location</th>  
+                        <th>Price</th>
+                    </tr>              
+                </thead>
+                <tbody id="data"></tbody>
+            </table>
+        </div>
+        
+        <!-- Side bars for aesthetic-->
+        <div id="left"></div>
+        <div id="right"></div>
+        
+
+    </body>
+</html>
